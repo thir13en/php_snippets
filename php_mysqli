@@ -10,6 +10,7 @@
 	if(!$con) {
 		die("Error un connection: " . mysqli_connection_error() . "<br>");
 	} else {
-		echo "database connected";
+		// set appropriate charset
+		mysqli_query($con, "SET NAMES 'utf8'");
 	}
 ?>
