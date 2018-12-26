@@ -1,0 +1,15 @@
+<?php
+	// connection params
+	$server = "";
+	ser = "<userName>";
+	$psswd = "<userPass>";
+	$bd = "<dataBaseNAme>";
+
+	// do the actual connection
+	$con = mysqli_connect($server, $user, $psswd, $bd);
+	if(!$con) {
+		die("Error un connection: " . mysqli_connection_error() . "<br>");
+	} else {
+		echo "database connected";
+	}
+?>
